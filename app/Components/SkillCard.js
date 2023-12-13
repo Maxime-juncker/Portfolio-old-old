@@ -2,10 +2,10 @@ import Image from "next/image";
 
 
 const SkillCard = ({ src, content }) => {
-  return (
+    return (
     <>
       <div className='Skill-card'>
-        <img src={src} alt='tkt' />
+        <Image alt={"The app icon"} src={src} width={50} height={50}/>
         <h3>{content}</h3>
       </div>
     </>

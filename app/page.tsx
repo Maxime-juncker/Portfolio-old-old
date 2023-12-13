@@ -1,5 +1,13 @@
-import Image from 'next/image'
-import SkillCard from './Components/SkillCard'
+import Image from 'next/image';
+import SkillCard from './Components/SkillCard';
+import PointLight from './Components/PointLight';
+import ProjectCard from './Components/ProjectCard';
+import Link from 'next/link';
+
+const violet = "#6C399F";
+const blue = "#306AFF";
+const red = "#FF3055";
+const green = "#387256"; 
 
 export default function Home() {
   return (
@@ -7,17 +15,17 @@ export default function Home() {
               {/* <Navbar/> */}
         
                 <section className='Hero' id='Hero'>
-                  {/* <PointLight left={10} top={60} backgroundColor={violet}/>
+                  <PointLight left={10} top={60} backgroundColor={violet}/>
                   <PointLight left={80} top={45} backgroundColor={violet}/>
-                  <PointLight left={25} top={10} backgroundColor={violet}/> */}
+                  <PointLight left={25} top={10} backgroundColor={violet}/>
         
                   <h1>JUNCKER <br /> MAXIME</h1>
                   <h3>SOFTWARE DEVELOPPER</h3>
                 </section>
         
                 <section className='About' id='About'>
-                  {/* <PointLight left={0} backgroundColor={blue}/>
-                  <PointLight left={65} top={20} backgroundColor={blue}/> */}
+                  <PointLight left={0} backgroundColor={blue}/>
+                  <PointLight left={65} top={20} backgroundColor={blue}/>
                   <div className="Presentation">
                     <h1>ABOUT ME</h1>
                     <p>
@@ -33,19 +41,19 @@ export default function Home() {
                   <div className="Skills">
                     <h1>SKILLS</h1>
                     <div className="Card-conterner">
-                      <SkillCard content={"C#"} src={"../Images/Cards/cpp.svg"}/>
-                      <SkillCard content={"C++"} src={"../Images/Cards/cpp.svg"}/>
-                      <SkillCard content={"CSS"} src={"../Images/Cards/css.svg"}/>
-                      <SkillCard content={"PYTHON"} src={"../Images/Cards/html.svg"}/>
-                      <SkillCard content={"UNITY"} src={"../Images/Cards/unity.svg"}/>
-                      <SkillCard content={"UNREAL"} src={"../Images/Cards/unreal.svg"}/>
-                      <SkillCard content={"BLENDER"} src={"../Images/Cards/blender.svg"}/>
-                      <SkillCard content={"VS CODE"} src={"../Images/Cards/visual-studio-code.svg"}/>
-                      <SkillCard content={"VISUAL STUDIO"} src={"../Images/Cards/visual-studio.svg"}/>
-                      <SkillCard content={"RIDER"} src={"../Images/Cards/jetbrains.svg"}/>
-                      <SkillCard content={"GITHUB"} src={"../Images/Cards/github.svg"}/>
-                      <SkillCard content={"XAMARIN"} src={"../Images/Cards/xamarin.svg"}/>
-                      <SkillCard content={"AVALONIA UI"} src={"../Images/Cards/avalonia.svg"}/>
+                      <SkillCard content={"C#"} src={"/Images/Cards/cs.svg"}/>
+                      <SkillCard content={"C++"} src={"/Images/Cards/cpp.svg"}/>
+                      <SkillCard content={"CSS"} src={"/Images/Cards/css.svg"}/>
+                      <SkillCard content={"PYTHON"} src={"/Images/Cards/html.svg"}/>
+                      <SkillCard content={"UNITY"} src={"/Images/Cards/unity.svg"}/>
+                      <SkillCard content={"UNREAL"} src={"/Images/Cards/unreal.svg"}/>
+                      <SkillCard content={"BLENDER"} src={"/Images/Cards/blender.svg"}/>
+                      <SkillCard content={"VS CODE"} src={"/Images/Cards/visual-studio-code.svg"}/>
+                      <SkillCard content={"VISUAL STUDIO"} src={"/Images/Cards/visual-studio.svg"}/>
+                      <SkillCard content={"RIDER"} src={"/Images/Cards/jetbrains.svg"}/>
+                      <SkillCard content={"GITHUB"} src={"/Images/Cards/github.svg"}/>
+                      <SkillCard content={"XAMARIN"} src={"/Images/Cards/xamarin.svg"}/>
+                      <SkillCard content={"AVALONIA UI"} src={"/Images/Cards/avalonia.svg"}/>
                     </div>
                   </div>
                 </section>
@@ -53,29 +61,31 @@ export default function Home() {
                 <section className='Work' id='Work'>
                   <h1>WORK</h1>
                   <h2>MY LATEST PROJECT</h2>
-        
-                  {/* <ProjectCard src={require("../Images/Projects/Maximatron/Maximatron-screen.png")}
+                  <Link legacyBehavior href="/Maximatron">
+      <a>About Page</a>
+    </Link>
+                  <ProjectCard src={"/Images/Projects/Maximatron/Maximatron-screen.png"}
                                title="The Maximatron" description="Desktop development"
-                               logo={require("../Images/Projects/Maximatron/Maximatron-logo.png")}
-                               nav={"/Maximatron"}/>
-                  <ProjectCard src={require("../Images/Projects/HumanSI/HumanSI-screen.png")}
+                               logo={"/Images/Projects/Maximatron/Maximatron-logo.png"}
+                               nav={`/Pages/Maximatron/`}/>
+                  <ProjectCard src={"/Images/Projects/HumanSI/HumanSI-screen.png"}
                                title="HumanSI" 
                                description="Human Simulation"
-                               logo={require("../Images/Projects/HumanSI/HumanSI-logo.png")}
+                               logo={"/Images/Projects/HumanSI/HumanSI-logo.png"}
                                nav={"/HumanSI"}/>
-                  <ProjectCard src={require("../Images/Projects/Pronout/Pronoute-screen.png")}
+                  <ProjectCard src={"/Images/Projects/Pronout/Pronoute-screen.png"}
                                title="Pronout" 
                                description="Mobile App"
-                               logo={require("../Images/Projects/Pronout/Pronoute_logo.png")}
-                               nav={"/Pronout"}/> */}
-                  {/* <PointLight left={70} top={20} backgroundColor={red}/>
+                               logo={"/Images/Projects/Pronout/Pronoute_logo.png"}
+                               nav={"/Pronout"}/>
+                  <PointLight left={70} top={20} backgroundColor={red}/>
                   <PointLight left={10} top={5} backgroundColor={red}/>
                   <PointLight left={65} top={55} backgroundColor={red}/>
                   <PointLight left={0} top={70} backgroundColor={red}/>
                   <PointLight left={80} top={80} backgroundColor={red}/>
                   <PointLight left={80} top={150} backgroundColor={green}/>
                   <PointLight left={0} top={100} backgroundColor={green}/>
-                  <PointLight left={10} top={150} backgroundColor={green}/>                */}
+                  <PointLight left={10} top={150} backgroundColor={green}/>               
         
                 </section>
         
