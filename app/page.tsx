@@ -67,7 +67,7 @@ export default function Home() {
                   <ProjectCard src={"/Images/Projects/Maximatron/Maximatron-screen.png"}
                                title="The Maximatron" description="Desktop development"
                                logo={"/Images/Projects/Maximatron/Maximatron-logo.png"}
-                               nav={`/Pages/Maximatron/`}/>
+                               nav={`/Maximatron/`}/>
                   <ProjectCard src={"/Images/Projects/HumanSI/HumanSI-screen.png"}
                                title="HumanSI" 
                                description="Human Simulation"
