@@ -72,7 +72,7 @@ h1
   height: 600px;
   width: 1000px;
   opacity: .2;
-  /* z-index: -1; */
+  z-index: -1;
   border-radius: 9990px;
   filter: blur(100vw);
   position: absolute;

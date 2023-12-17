@@ -71,6 +71,14 @@ const Maximatron = () =>
                 </div>
             </section>
 
+            <button className="Next-project">
+                <section>
+                    <h3>NEXT PROJECT</h3>
+                    <h1>Pronout</h1>
+                </section>
+                <img src="/arrow.svg" className="test"/>
+            </button>
+
         </div>
     );
 }
