@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import SkillCard from './Components/SkillCard';
-import PointLight from './Components/PointLight';
-import ProjectCard from './Components/ProjectCard';
+import SkillCard from '../app/Components/SkillCard';
+import PointLight from '../app/Components/PointLight';
+import ProjectCard from '../app/Components/ProjectCard';
 import Link from 'next/link';
 
 const violet = "#6C399F";
