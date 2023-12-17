@@ -23,6 +23,8 @@ const Maximatron = () =>
 
             </header>
 
+            <div></div>
+
             <section className='Content'>
                 <div className="Summary">
                     <article>
